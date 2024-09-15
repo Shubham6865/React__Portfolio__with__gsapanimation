@@ -37,7 +37,7 @@ const Contact = () => {
                         </article>
                     </div>
 
-                    <form >
+                    <form target="_blank" action="https://formsubmit.co/shubham.parade6865@gmail.com" method="POST">
                         <input type="text" name='name' placeholder='Your full name' required />
                         <input type="email" name='email' placeholder='Your Email' required />
                         <textarea name="message" rows={7} placeholder='Your Message'></textarea>
@@ -45,7 +45,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

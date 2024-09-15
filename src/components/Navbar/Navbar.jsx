@@ -22,7 +22,12 @@ const Navbar = () => {
         }
         return setVisible(false);
     }
-
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener('scroll', handleScroll)
@@ -84,7 +89,7 @@ const Navbar = () => {
                 }
             </div>
             <div className="nav__buttons_group">
-                <button className='btn btn__primary hiremebtn  ' >Let's Connect
+                <button className='btn btn__primary hiremebtn  ' onClick={handleScrollToContact} >Let's Connect
                     <ImArrowUpRight2 className='Arrowlogo' />
                 </button>
                 <FaBarsStaggered className='menu' onClick={() => setShowSidebar(!showSidebar)} />

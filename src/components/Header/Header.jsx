@@ -4,6 +4,7 @@ import { profile1 } from '../../images';
 import Facts from './Facts/Facts';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+
 const Header = () => {
 
     const container = useRef(null);
@@ -58,10 +59,11 @@ const Header = () => {
                         <div className="header__info__top">
                             Hello There! I'm <span className='color__primary'>Shubham Parade</span>
                         </div>
-                        <div className="header__info__middle">
+                        <div className="header__info__middle "  >
                             <h1 className="primary__title header__title">
-                                I'M A WEB DEVELOPER
+                                I'M A REACT DEVELOPER
                             </h1>
+
                             <p className="text__muted header__description">I specialize in dissecting intricate user experience challenges to engineer solutions with a focus on integrity, delivering impactful results that resonate with millions of users.</p>
                         </div>
                         <Facts />
@@ -80,7 +82,7 @@ const Header = () => {
                 </div>
             </div>
 
-        </header>
+        </header >
     )
 }
 

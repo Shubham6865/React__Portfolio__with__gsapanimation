@@ -27,6 +27,7 @@
     /* background-color: blueviolet; */
     padding: 40px;
     padding-top: 27px;
+    padding-right: 0px;
 }
 
 #header .intro__text {
@@ -103,9 +104,11 @@
     position: relative;
     margin: auto;
     overflow: hidden;
+    /* background: red; */
+
 }
 
-#header .profile__photo_-container::after {
+#header .profile__photo__container::after {
     position: absolute;
     content: "";
     bottom: 0;

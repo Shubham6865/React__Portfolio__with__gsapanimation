@@ -9,12 +9,12 @@ const Facts = () => {
 
     const [experience, setExperience] = useState(0);
     const [projects, setProjects] = useState(0);
-    const [client, setClient] = useState(0);
+    // const [client, setClient] = useState(0);
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-            setExperience(3)
-            setProjects(20)
-            setClient(5)
+            setExperience(2.9)
+            setProjects(25)
+            // setClient(5)
         }, 3000)
 
         return () => {
@@ -56,17 +56,16 @@ const Facts = () => {
                 </div>
                 <p className="names">Completed Project</p>
             </div>
-            <div className="fact__item">
+            {/* <div className="fact__item">
                 <div className="count__container">
-
                     <Odometer
                         value={client}
                     />
                     <span className="indicator">k</span>
-                    {/* <p className="names">Satisfied Client</p> */}
+                    
                 </div>
                 <p className="names">Satisfied Client</p>
-            </div>
+            </div> */}
 
         </div>
     )

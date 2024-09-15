@@ -4,13 +4,21 @@
     transition: var(--transition);
     border-radius: var(--border-radius-3);
     background: rgba(var(--card-rgb), 0.1);
+    /* add */
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-3);
+    color: var(--color-text);
+    padding: 40px 25px;
+    isolation: isolate;
+    cursor: pointer;
 }
 
-.skill__card:hover {
+/* .skill__card:hover {
     background: transparent;
     border-color: var(--color-primary);
     cursor: default;
-}
+} */
 
 .skill__card h3 {
     text-align: center;
@@ -29,7 +37,54 @@
 .skill__card .skill__details {
     display: flex;
     gap: 1rem;
+
+
 }
+
+/* add */
+
+.skill__card::before,
+.skill__card::after {
+    content: "";
+    position: absolute;
+}
+
+.skill__card::before {
+    width: 200%;
+    height: 200%;
+    background-image: conic-gradient(var(--color-primary),
+            transparent 60deg,
+            transparent 180deg,
+            var(--color-primary),
+            transparent 240deg);
+
+    inset: -50%;
+    z-index: -2;
+    animation: spin 9s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.skill__card:hover::before {
+    animation-play-state: running;
+
+}
+
+.skill__card::after {
+    background: var(--color-ui-2);
+    inset: 0.25rem;
+    border-radius: calc(1.2rem- 0.25rem);
+    z-index: -1;
+    transition: var(--transition);
+
+}
+
+/* add */
 
 .skill__card .skill__icon {
     margin-top: 6px;

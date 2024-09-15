@@ -3,8 +3,12 @@ import './SkillCard.css';
 
 const SkillCard = ({ data, title }) => {
 
+    const cardStyle = title === 'Frontend Development'
+        ? { "--color-primary": "var(--color-success)" }
+        : { "--color-primary": "blueviolet" };
+
     return (
-        <div className="skill__card">
+        <div className="skill__card" style={cardStyle}>
             <h3>{title}</h3>
             <div className="skill__content">
                 {

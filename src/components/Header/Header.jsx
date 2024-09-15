@@ -62,19 +62,19 @@ const Header = () => {
                             <h1 className="primary__title header__title">
                                 I'M A WEB DEVELOPER
                             </h1>
-                            <p className="text__muted header__description">I dissect intricate user experience challenges to engineer integrity-focused solutions that resonate with billions of user.</p>
+                            <p className="text__muted header__description">I specialize in dissecting intricate user experience challenges to engineer solutions with a focus on integrity, delivering impactful results that resonate with millions of users.</p>
                         </div>
                         <Facts />
                         <div className="header__info__bottom">
-                            <button className="btn">
+                            <button className="btn ">
                                 Download CV
                             </button>
                             <a href="mailto:paradeshubham6865@gmail.com" className='btn'>Email me</a>
                         </div>
                     </div>
                 </div>
-                <div className="column profile__wrapper ">
-                    <div className="profile__photo__container">
+                <div className="column profile__wrapper " >
+                    <div className="profile__photo__container" >
                         <img src={profile1} className='profile__photo' alt="profile 1" />
                     </div>
                 </div>

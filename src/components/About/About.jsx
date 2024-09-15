@@ -39,7 +39,9 @@ const About = () => {
                     <h2 className="primary__title">About Me</h2>
                     <h1 className="title">I am  <span className='color__primary'>Shubham Parade</span></h1>
                     <p className="text__muted description">
-                        Experienced Full Stack Developer with a passion for  creating  dynamic, intuitive, and responsive application. Proficient in multiple programming languages and frameworks, as well as database design and management. Strong problem-solving and analytical skills, and a track record of delivering high-quality code on time and on budget.
+
+
+                        I'm a skilled React developer focused on building intuitive and responsive web applications. With expertise in React.js, Redux, and modern CSS frameworks, I create efficient, scalable solutions. My strengths include problem-solving, clean code practices, and delivering projects on time. I'm passionate about crafting seamless user experiences and always aiming to improve.
                     </p>
                 </div>
             </div>

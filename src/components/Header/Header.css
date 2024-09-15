@@ -26,6 +26,7 @@
 #header .header__info {
     /* background-color: blueviolet; */
     padding: 40px;
+    padding-top: 27px;
 }
 
 #header .intro__text {
@@ -64,7 +65,11 @@
 }
 
 #header .profile__wrapper {
-    flex: 1
+    flex: 1;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: aqua; */
 }
 
 #header .header__info__top {

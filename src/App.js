@@ -6,6 +6,7 @@ import Services from "./components/Services/Services";
 import Projects from "./components/Projects/Projects";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Contact from "./components/Contact/Contact";
+
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <Services />
       <Skills />
+      {/* <Services /> */}
       <Projects />
       {/* <Testimonial /> */}
       <Contact />

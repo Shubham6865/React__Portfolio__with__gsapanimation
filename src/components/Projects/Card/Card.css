@@ -78,7 +78,9 @@
 
 .card .card__details .card__details__middle .description {
     font-size: 14px;
-
+    height: 150px;
+    /* background-color: aqua; */
+    overflow-y: scroll;
 }
 
 .card .card__details .card__details__bottom {
@@ -96,6 +98,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+
 
 }
 

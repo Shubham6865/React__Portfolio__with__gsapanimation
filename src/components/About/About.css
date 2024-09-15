@@ -49,7 +49,7 @@
         transform: rotate(0);
     }
 
-    */ #about .btn {
+    #about .btn {
         display: block;
         margin: auto;
         width: 100%;

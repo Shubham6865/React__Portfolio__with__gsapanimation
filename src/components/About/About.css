@@ -39,14 +39,17 @@
 
 @media (max-width:850px) {
     #about .about__container {
-        grid-template-columns: 100%;
+        /* grid-template-columns: 100%; */
+        display: flex;
+        flex-direction: column-reverse;
+
     }
 
-    #about .me__container {
-        display: none;
+    #about .photo__container {
+        transform: rotate(0);
     }
 
-    #about .btn {
+    */ #about .btn {
         display: block;
         margin: auto;
         width: 100%;

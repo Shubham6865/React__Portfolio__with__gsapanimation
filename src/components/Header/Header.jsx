@@ -6,6 +6,15 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 const Header = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/files/Resume.pdf';
+        link.download = 'Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
 
     const container = useRef(null);
     gsap.registerPlugin(useGSAP)
@@ -68,7 +77,7 @@ const Header = () => {
                         </div>
                         <Facts />
                         <div className="header__info__bottom">
-                            <button className="btn ">
+                            <button className="btn " onClick={handleDownload}>
                                 Download CV
                             </button>
                             <a href="mailto:paradeshubham6865@gmail.com" className='btn'>Email me</a>

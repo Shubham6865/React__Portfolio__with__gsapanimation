@@ -82,7 +82,7 @@ const Card = (props) => {
                             Demo
                         </a>
                         <div className="btn__share" onClick={handleShare}>
-                            <AiOutlineShareAlt />
+                            <AiOutlineShareAlt style={{ scale: '1.5' }} />
                         </div>
                     </div>
                 </div>

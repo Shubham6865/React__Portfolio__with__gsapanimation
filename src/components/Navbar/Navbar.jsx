@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './Navbar.css';
-import { SiWebmoney } from 'react-icons/si';
 import { menu } from '../../data';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { FaArrowUpRightFromSquare, FaBarsStaggered } from 'react-icons/fa6';
+import { FaBarsStaggered } from 'react-icons/fa6';
 import { FaTimes } from 'react-icons/fa';
 import gsap, { Power3 } from 'gsap';
 import { useGSAP } from '@gsap/react';

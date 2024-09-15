@@ -31,7 +31,7 @@ const Footer = () => {
                     {
                         socialHandles.map((list, index) => (
                             <a href={list.link} className='icon__container social__handles' target='
-                _blank'  key={index}>
+                _blank' rel="noreferrer" key={index}>
                                 {list.icon}
                             </a>
 

@@ -78,7 +78,7 @@ const Card = (props) => {
                         </div>
                     </div>
                     <div className="button__container">
-                        <a href={props.demoLink} target='_blank' rel="noreferrer" className='btn btn__primary'>
+                        <a href={props.data.demoLink} target='_blank' rel="noreferrer" className='btn btn__primary'>
                             Demo
                         </a>
                         <div className="btn__share" onClick={handleShare}>

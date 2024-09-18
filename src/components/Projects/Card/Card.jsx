@@ -11,7 +11,7 @@ const Card = (props) => {
         const shareData = {
             title: props.title,
             text: `Check out this project: ${props.title}`,
-            url: props.demoLink,
+            url: props.data.demoLink,
         };
 
         try {
